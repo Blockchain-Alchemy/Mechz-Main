@@ -1,0 +1,427 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "files",
+    "publicDir": "../../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "v6GVasCmjcoJpKZhA57bGQ",
+      "projectApiToken": "sLH8MeSr42nkCdt2CBW0ZfZr6cKkilWESe5O6B9yirPYkDlWMLlattSynGB6DdyZrjJYWxxYeKoBVJe81Q",
+      "projectName": "Mechz",
+      "version": "latest",
+      "cssFilePath": "plasmic/mechz/plasmic_mechz.module.css",
+      "components": [
+        {
+          "id": "bMGUQ9TxBPsJI",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "v6GVasCmjcoJpKZhA57bGQ",
+          "renderModuleFilePath": "plasmic/mechz/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "Homepage.tsx"
+          },
+          "cssFilePath": "plasmic/mechz/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "NxycUbS85IVXb2",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "v6GVasCmjcoJpKZhA57bGQ",
+          "renderModuleFilePath": "plasmic/mechz/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/mechz/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "aut6KnfbkQmpXP",
+          "name": "Play",
+          "type": "managed",
+          "projectId": "v6GVasCmjcoJpKZhA57bGQ",
+          "renderModuleFilePath": "plasmic/mechz/PlasmicPlay.tsx",
+          "importSpec": {
+            "modulePath": "Play.tsx"
+          },
+          "cssFilePath": "plasmic/mechz/PlasmicPlay.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "-P5pSOuII0lcb0",
+          "name": "Navbar",
+          "type": "managed",
+          "projectId": "v6GVasCmjcoJpKZhA57bGQ",
+          "renderModuleFilePath": "plasmic/mechz/PlasmicNavbar.tsx",
+          "importSpec": {
+            "modulePath": "Navbar.tsx"
+          },
+          "cssFilePath": "plasmic/mechz/PlasmicNavbar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "kmDjyMAgVxdWnp",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/mechz/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "xC6wd-RwyfrRRO",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/mechz/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "nC87V1RHuk2YHN",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/mechz/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "g5n2w-1z_-9-Sj",
+          "name": "Icon28Icon",
+          "moduleFilePath": "plasmic/mechz/icons/PlasmicIcon__Icon28.tsx"
+        },
+        {
+          "id": "Fk5288U_uFssAu",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/mechz/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "CwA3UD-RV58tdb",
+          "name": "Icons8Right48SvgIcon",
+          "moduleFilePath": "plasmic/mechz/icons/PlasmicIcon__Icons8Right48Svg.tsx"
+        },
+        {
+          "id": "28ccL-rkNGYuT4",
+          "name": "_227601RightArrowIconsvgIcon",
+          "moduleFilePath": "plasmic/mechz/icons/PlasmicIcon___227601RightArrowIconsvg.tsx"
+        },
+        {
+          "id": "3m4uVCB_20TDjx",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/mechz/icons/PlasmicIcon__Icon4.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "vW3KzLmRPxtfPJ",
+          "name": "logo.svg",
+          "filePath": "plasmic/mechz/images/logosvg.svg"
+        },
+        {
+          "id": "fHDpmokJlmADc3",
+          "name": "marketing-playbook.png",
+          "filePath": "plasmic/mechz/images/marketingPlaybookpng.png"
+        },
+        {
+          "id": "H5mtBzbSRWU4Dd",
+          "name": "Group",
+          "filePath": "plasmic/mechz/images/group.svg"
+        },
+        {
+          "id": "eusitwKTDIHgsJ",
+          "name": "Group 2",
+          "filePath": "plasmic/mechz/images/group2.svg"
+        },
+        {
+          "id": "O4imepXkoZWJOi",
+          "name": "Group 3",
+          "filePath": "plasmic/mechz/images/group3.svg"
+        },
+        {
+          "id": "R_ENkfrLu_gg-b",
+          "name": "Group 4",
+          "filePath": "plasmic/mechz/images/group4.svg"
+        },
+        {
+          "id": "4NYna5PSxPBXc4",
+          "name": "Group 5",
+          "filePath": "plasmic/mechz/images/group5.svg"
+        },
+        {
+          "id": "5njuOgmv_cLrd3",
+          "name": "Group 6",
+          "filePath": "plasmic/mechz/images/group6.svg"
+        },
+        {
+          "id": "chgI7uNREzXiG5",
+          "name": "Group 7",
+          "filePath": "plasmic/mechz/images/group7.svg"
+        },
+        {
+          "id": "jGmZPYcdoTvC6s",
+          "name": "book-inside.png",
+          "filePath": "plasmic/mechz/images/bookInsidepng.png"
+        },
+        {
+          "id": "t_Mi6XdIWNQr2q",
+          "name": "background-2.jpg",
+          "filePath": "plasmic/mechz/images/background2Jpg.jpeg"
+        },
+        {
+          "id": "QWMISuqsHPyd2K",
+          "name": "hilary-ouse.png",
+          "filePath": "plasmic/mechz/images/hilaryOusepng.png"
+        },
+        {
+          "id": "5g4KfhlOXhCMDH",
+          "name": "book-inside-2.png",
+          "filePath": "plasmic/mechz/images/bookInside2Png.png"
+        },
+        {
+          "id": "CcSvdvdjqCI6k0",
+          "name": "background.jpg",
+          "filePath": "plasmic/mechz/images/backgroundjpg.jpeg"
+        },
+        {
+          "id": "ev0igRn5GyOzum",
+          "name": "brandon-guidelines.jpg",
+          "filePath": "plasmic/mechz/images/brandonGuidelinesjpg.jpeg"
+        },
+        {
+          "id": "lQikgY-UGBeu17",
+          "name": "logo (1).svg",
+          "filePath": "plasmic/mechz/images/logo1Svg.svg"
+        },
+        {
+          "id": "w5ZvFLoqAuH8zu",
+          "name": "icons8-twitter.svg",
+          "filePath": "plasmic/mechz/images/icons8Twittersvg.svg"
+        },
+        {
+          "id": "2X2e0iGuunMaBS",
+          "name": "icons8-facebook.svg",
+          "filePath": "plasmic/mechz/images/icons8Facebooksvg.svg"
+        },
+        {
+          "id": "sYRQ6vrcDCIGse",
+          "name": "icons8-youtube.svg",
+          "filePath": "plasmic/mechz/images/icons8Youtubesvg.svg"
+        },
+        {
+          "id": "9Yh6cNw0rwm923",
+          "name": "icons8-vimeo.svg",
+          "filePath": "plasmic/mechz/images/icons8Vimeosvg.svg"
+        },
+        {
+          "id": "Hu-d76ElHmSPNx",
+          "name": "image",
+          "filePath": "plasmic/mechz/images/image.png"
+        },
+        {
+          "id": "oJLNQAR6Omq3Ik",
+          "name": "image 2",
+          "filePath": "plasmic/mechz/images/image2.png"
+        },
+        {
+          "id": "Tu8coqvJGCAxPW",
+          "name": "image 3",
+          "filePath": "plasmic/mechz/images/image3.png"
+        },
+        {
+          "id": "81AQlsDnuyhwX8",
+          "name": "image 4",
+          "filePath": "plasmic/mechz/images/image4.png"
+        },
+        {
+          "id": "dvkPnAIh2dKx4-",
+          "name": "image 5",
+          "filePath": "plasmic/mechz/images/image5.png"
+        },
+        {
+          "id": "1J_n5OB5G45R0b",
+          "name": "image 6",
+          "filePath": "plasmic/mechz/images/image6.png"
+        },
+        {
+          "id": "FlN99zYSevQEPk",
+          "name": "image 7",
+          "filePath": "plasmic/mechz/images/image7.png"
+        },
+        {
+          "id": "0dNwdJNk1gsZ6L",
+          "name": "image 8",
+          "filePath": "plasmic/mechz/images/image8.png"
+        },
+        {
+          "id": "SmMYIWKuy6Mx2w",
+          "name": "image 9",
+          "filePath": "plasmic/mechz/images/image9.png"
+        },
+        {
+          "id": "BzWqC9Wf0O9aac",
+          "name": "image 10",
+          "filePath": "plasmic/mechz/images/image10.png"
+        },
+        {
+          "id": "aU4PFP_xaJ-5c-",
+          "name": "westworld.png",
+          "filePath": "plasmic/mechz/images/westworldpng.png"
+        },
+        {
+          "id": "PgZeWenK85aS61",
+          "name": "red_dead_logo.png",
+          "filePath": "plasmic/mechz/images/redDeadLogopng.png"
+        },
+        {
+          "id": "6ey-EFjs-YP6oR",
+          "name": "algo_logo.png",
+          "filePath": "plasmic/mechz/images/algoLogopng.png"
+        },
+        {
+          "id": "7zFVyimedNqLuU",
+          "name": "encode_logo.png",
+          "filePath": "plasmic/mechz/images/encodeLogopng.png"
+        },
+        {
+          "id": "X5uGZRZkaynrZB",
+          "name": "logoAlgoRancheroSmall.png",
+          "filePath": "plasmic/mechz/images/logoAlgoRancheroSmallpng.png"
+        },
+        {
+          "id": "a5fQ5ys0DesmI6",
+          "name": "ranchero1.png",
+          "filePath": "plasmic/mechz/images/ranchero1Png.png"
+        },
+        {
+          "id": "LEji5TGOWy5iwE",
+          "name": "suel.png",
+          "filePath": "plasmic/mechz/images/suelpng.png"
+        },
+        {
+          "id": "czYG5poath6Isk",
+          "name": "trading.png",
+          "filePath": "plasmic/mechz/images/tradingpng.png"
+        },
+        {
+          "id": "r-hAZFR1kctwZI",
+          "name": "unityPlaceholder.png",
+          "filePath": "plasmic/mechz/images/unityPlaceholderpng.png"
+        },
+        {
+          "id": "-_A5RNglaYPAIz",
+          "name": "ticket.png",
+          "filePath": "plasmic/mechz/images/ticketpng.png"
+        },
+        {
+          "id": "YLu1ZqBP2Hi14f",
+          "name": "need.png",
+          "filePath": "plasmic/mechz/images/needpng.png"
+        },
+        {
+          "id": "48YM0ASJt",
+          "name": "mechz1_186x80.png",
+          "filePath": "plasmic/mechz/images/mechz1186X80Png.png"
+        },
+        {
+          "id": "wDk_f63kd",
+          "name": "mechz_vert1.png",
+          "filePath": "plasmic/mechz/images/mechzVert1Png.png"
+        },
+        {
+          "id": "MsKyBn__0",
+          "name": "mechz_vert1.png 2",
+          "filePath": "plasmic/mechz/images/mechzVert1Png2.png"
+        },
+        {
+          "id": "kGPZ85lvr",
+          "name": "l1.png",
+          "filePath": "plasmic/mechz/images/l1Png.png"
+        },
+        {
+          "id": "TNB9jijL0",
+          "name": "l2",
+          "filePath": "plasmic/mechz/images/l2.png"
+        },
+        {
+          "id": "LFCaLi_lJ",
+          "name": "l3",
+          "filePath": "plasmic/mechz/images/l3.png"
+        },
+        {
+          "id": "M6dL76plw",
+          "name": "l4",
+          "filePath": "plasmic/mechz/images/l4.png"
+        },
+        {
+          "id": "Bvihr7nkd",
+          "name": "l2 2",
+          "filePath": "plasmic/mechz/images/l22.png"
+        },
+        {
+          "id": "fRiBmPIRi",
+          "name": "mechz_action2.gif",
+          "filePath": "plasmic/mechz/images/mechzAction2Gif.gif"
+        },
+        {
+          "id": "YdfyGchLz",
+          "name": "mechz_action2.gif 2",
+          "filePath": "plasmic/mechz/images/mechzAction2Gif2.gif"
+        },
+        {
+          "id": "FKwvr8g3O",
+          "name": "collect_mechz",
+          "filePath": "plasmic/mechz/images/collectMechz.png"
+        },
+        {
+          "id": "3wfkdwfYD",
+          "name": "no_fuel_cell",
+          "filePath": "plasmic/mechz/images/noFuelCell.png"
+        },
+        {
+          "id": "uuAWmrS9u",
+          "name": "fuel_cell_anim.gif",
+          "filePath": "plasmic/mechz/images/fuelCellAnimgif.gif"
+        },
+        {
+          "id": "8lfy8rZCU",
+          "name": "fuel_cell_anim2.gif",
+          "filePath": "plasmic/mechz/images/fuelCellAnim2Gif.gif"
+        },
+        {
+          "id": "2fGRQMCyh",
+          "name": "no_fuel_cell 2",
+          "filePath": "plasmic/mechz/images/noFuelCell2.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "hQ7AB2tDFXBfTk",
+        "name": "Screen",
+        "projectId": "v6GVasCmjcoJpKZhA57bGQ",
+        "contextFilePath": "plasmic/mechz/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "cliVersion": "0.1.184",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.184/dist/plasmic.schema.json"
+}
