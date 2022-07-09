@@ -24,12 +24,12 @@ function Play_(props: PlayProps, ref: HTMLElementRefOf<"div">) {
 
   React.useEffect(() => {
     if (walletAddress) {
-      // getAssets().then((result) => {
-      //   if (result["asset-holding"]["amount"] > 0) {
-      //     setHolding(true);
-      //     unityContext.send("AccessController", "InsertToken");
-      //   }
-      // });
+      getAssets().then((token) => {
+        if (token) {
+          setHolding(true);
+          unityContext.send("AccessController", "InsertToken");
+        }
+      });
     }
   }, [walletAddress, getAssets]);
 

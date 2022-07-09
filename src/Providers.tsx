@@ -2,10 +2,16 @@ import React from "react";
 import { NotificationsProvider } from "@mantine/notifications";
 import { NetworkOptions, TezosProvider } from "./components/TezosContext";
 
+// const options = {
+//   appName: "demo",
+//   networkType: "ithacanet",
+//   rpc: "https://rpc.tzkt.io/ithacanet", //'https://ithacanet.smartpy.io',
+// } as NetworkOptions;
+
 const options = {
-  appName: "demo",
-  networkType: "ithacanet",
-  rpc: "https://rpc.tzkt.io/ithacanet", //'https://ithacanet.smartpy.io',
+  appName: "Mechz",
+  networkType: "mainnet",
+  rpc: "https://mainnet.api.tez.ie",
 } as NetworkOptions;
 
 const Providers = ({ children }: { children: any }) => {
