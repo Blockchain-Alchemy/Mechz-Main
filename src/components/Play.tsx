@@ -38,8 +38,8 @@ function Play_(props: PlayProps, ref: HTMLElementRefOf<"div">) {
       <div style={{ cursor: "pointer" }}>
         {holding ? (
           <img
-            src="images/ticket_to_ride.png"
-            alt="ticket_to_ride"
+            src="images/fuel_cell_active.png"
+            alt="fuel_cell_active"
             onClick={() =>
               window.open("https://ab2.gallery/asset/794691991", "_blank")
             }
