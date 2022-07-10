@@ -13,7 +13,7 @@ export interface PlayProps extends DefaultPlayProps {}
 const unityContext = new UnityContext({
   loaderUrl: "Build/1.loader.js",
   dataUrl: "Build/1.data",
-  frameworkUrl: "Build/1.framework.js.",
+  frameworkUrl: "Build/1.framework.js",
   codeUrl: "Build/1.wasm",
 });
 
