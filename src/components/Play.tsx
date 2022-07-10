@@ -41,7 +41,7 @@ function Play_(props: PlayProps, ref: HTMLElementRefOf<"div">) {
             src="images/fuel_cell_active.png"
             alt="fuel_cell_active"
             onClick={() =>
-              window.open("https://ab2.gallery/asset/794691991", "_blank")
+              window.open("https://objkt.com/asset/KT1K58hY9q4ckHnb1KGXB2XgbM49EXZTWPBy/1", "_blank")
             }
           />
         ) : (
@@ -49,7 +49,7 @@ function Play_(props: PlayProps, ref: HTMLElementRefOf<"div">) {
             src="images/need.png"
             alt="Need Ticket"
             onClick={() =>
-              window.open("https://ab2.gallery/asset/794691991", "_blank")
+              window.open("https://objkt.com/asset/KT1K58hY9q4ckHnb1KGXB2XgbM49EXZTWPBy/1", "_blank")
             }
           />
         )}
