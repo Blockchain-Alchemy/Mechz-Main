@@ -1710,7 +1710,7 @@ function PlasmicPlay__RenderFunc(props: {
                           )}
                         >
                           {
-                            "If you own an Access Ticket, you have unlimited access to the Algo Ranchero world as it's being built.\n\nOne ticket is all you need. It doesn't get burned or destroyed when you access the game-world.\n\nYou'll be able to see the world evolve and grow as you have access to the untested wilderness and rough towns that will become the final game-world.\n\nEnjoy this exclusive access to the behind-the-scenes peek into how this game is coming together. "
+                            "If you own an Experimental Fuel Cell, you have unlimited access to the Mechz world as it's being built.\n\nOne Fuel Cell is all you need. It doesn't get burned or destroyed when you access the game-world.\n\nYou'll be able to see the world evolve and grow as you have access to the untested locations and enemy units that will become the final game-world.\n\nEnjoy this exclusive access to the behind-the-scenes peek into how this game is coming together. "
                           }
                         </div>
                       </p>
