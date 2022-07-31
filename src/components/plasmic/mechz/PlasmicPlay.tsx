@@ -168,11 +168,16 @@ function PlasmicPlay__RenderFunc(props: {
   const { variants, overrides, forNode } = props;
 
   const $ctx = ph.useDataEnv?.() || {};
-  const args = Object.assign(
-    {},
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
 
-    props.args
+        props.args
+      ),
+    [props.args]
   );
+
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({
@@ -182,6 +187,7 @@ function PlasmicPlay__RenderFunc(props: {
   return (
     <React.Fragment>
       {}
+
       {}
 
       <div className={projectcss.plasmic_page_wrapper}>
@@ -341,6 +347,7 @@ function PlasmicPlay__RenderFunc(props: {
               </p.Stack>
             </p.Stack>
           ) : null}
+
           {true ? (
             <section
               data-plasmic-name={"section3"}
@@ -593,6 +600,7 @@ function PlasmicPlay__RenderFunc(props: {
               </div>
             </section>
           ) : null}
+
           {true ? (
             <section
               data-plasmic-name={"section4"}
@@ -662,6 +670,7 @@ function PlasmicPlay__RenderFunc(props: {
               </div>
             </section>
           ) : null}
+
           {true ? (
             <section
               data-plasmic-name={"section5"}
@@ -889,6 +898,7 @@ function PlasmicPlay__RenderFunc(props: {
               </div>
             </section>
           ) : null}
+
           {true ? (
             <section
               data-plasmic-name={"section6"}
@@ -1083,6 +1093,7 @@ function PlasmicPlay__RenderFunc(props: {
               </div>
             </section>
           ) : null}
+
           {true ? (
             <section
               data-plasmic-name={"section7"}
@@ -1384,6 +1395,7 @@ function PlasmicPlay__RenderFunc(props: {
               </p.Stack>
             </section>
           ) : null}
+
           {true ? (
             <section
               data-plasmic-name={"section8"}
@@ -1496,6 +1508,7 @@ function PlasmicPlay__RenderFunc(props: {
               </div>
             </section>
           ) : null}
+
           {true ? (
             <section
               data-plasmic-name={"section9"}
@@ -1582,6 +1595,7 @@ function PlasmicPlay__RenderFunc(props: {
                     }}
                   />
                 ) : null}
+
                 {true ? (
                   <Button
                     data-plasmic-name={"useTicket"}
@@ -1591,6 +1605,7 @@ function PlasmicPlay__RenderFunc(props: {
                     {"Use Ticket"}
                   </Button>
                 ) : null}
+
                 {p.renderPlasmicSlot({
                   defaultContents: (
                     <p.PlasmicImg
@@ -1899,6 +1914,7 @@ function PlasmicPlay__RenderFunc(props: {
                         />
                       </a>
                     ) : null}
+
                     {true ? (
                       <a
                         className={classNames(
@@ -1930,6 +1946,7 @@ function PlasmicPlay__RenderFunc(props: {
                         />
                       </a>
                     ) : null}
+
                     {true ? (
                       <a
                         className={classNames(
@@ -1961,6 +1978,7 @@ function PlasmicPlay__RenderFunc(props: {
                         />
                       </a>
                     ) : null}
+
                     {true ? (
                       <a
                         className={classNames(
@@ -2391,12 +2409,16 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicPlay__ArgProps,
-      internalVariantPropNames: PlasmicPlay__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicPlay__ArgProps,
+          internalVariantPropNames: PlasmicPlay__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicPlay__RenderFunc({
       variants,

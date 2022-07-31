@@ -9,7 +9,7 @@
     "@mantine/notifications": "^4.2.11",
     "@plasmicapp/cli": "^0.1.184",
     "@plasmicapp/host": "^1.0.70",
-    "@plasmicapp/loader-react": "^1.0.148",
+    "@plasmicapp/loader-react": "^1.0.161",
     "@plasmicapp/react-web": "^0.2.101",
     "@taquito/beacon-wallet": "^11.2.0",
     "@taquito/taquito": "^11.2.0",
