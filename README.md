@@ -34,6 +34,8 @@ The next thing we'll bring players of Mechz is the ability to join factions. Eac
 
 ### Experimental Fuel Cell
 
+[Objkt.com Listing](https://objkt.com/asset/KT1K58hY9q4ckHnb1KGXB2XgbM49EXZTWPBy/1)
+
 If you own an Experimental Fuel Cell, you have unlimited access to the Mechz world as it's being built.
 
 One ticket is all you need. It doesn't get burned or destroyed when you access the game-world.
