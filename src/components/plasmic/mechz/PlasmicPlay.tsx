@@ -168,11 +168,16 @@ function PlasmicPlay__RenderFunc(props: {
   const { variants, overrides, forNode } = props;
 
   const $ctx = ph.useDataEnv?.() || {};
-  const args = Object.assign(
-    {},
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
 
-    props.args
+        props.args
+      ),
+    [props.args]
   );
+
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({
@@ -2391,12 +2396,16 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicPlay__ArgProps,
-      internalVariantPropNames: PlasmicPlay__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicPlay__ArgProps,
+          internalVariantPropNames: PlasmicPlay__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicPlay__RenderFunc({
       variants,

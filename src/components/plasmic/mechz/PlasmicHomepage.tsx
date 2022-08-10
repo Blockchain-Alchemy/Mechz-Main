@@ -168,11 +168,16 @@ function PlasmicHomepage__RenderFunc(props: {
   const { variants, overrides, forNode } = props;
 
   const $ctx = ph.useDataEnv?.() || {};
-  const args = Object.assign(
-    {},
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
 
-    props.args
+        props.args
+      ),
+    [props.args]
   );
+
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({
@@ -402,7 +407,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           </span>
                           <React.Fragment>
                             {
-                              "is the first open-world play-to-earn Western Adventure game. \nIt uses the Algorand blockchain and wallet to let players keep their loot and trade with others. As the game expands, the world will grow along with the adventure. So get a "
+                              "is the first open-world play-to-earn Western Adventure game. \n\nIt uses the Algorand blockchain and wallet to let players keep their loot and trade with others. As the game expands, the world will grow along with the adventure. So get a "
                             }
                           </React.Fragment>
                           <span
@@ -1006,7 +1011,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.h2__fQi8T
                     )}
                   >
-                    {"2. Unlock Characters"}
+                    {"2. Unlock Classes"}
                   </h2>
 
                   <p
@@ -2484,12 +2489,16 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicHomepage__ArgProps,
-      internalVariantPropNames: PlasmicHomepage__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicHomepage__ArgProps,
+          internalVariantPropNames: PlasmicHomepage__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicHomepage__RenderFunc({
       variants,

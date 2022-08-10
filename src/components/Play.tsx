@@ -7,6 +7,7 @@ import {
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 import useAssets from "../hooks/useAssets";
 import useWallet from "../hooks/useWallet";
+import { useInterval } from "../hooks/useInterval";
 
 export interface PlayProps extends DefaultPlayProps {}
 
@@ -22,16 +23,17 @@ function Play_(props: PlayProps, ref: HTMLElementRefOf<"div">) {
   const { walletAddress } = useWallet();
   const { getAssets } = useAssets();
 
-  React.useEffect(() => {
-    if (walletAddress) {
+  useInterval(() => {
+    if (walletAddress && !holding) {
       getAssets().then((token) => {
         if (token) {
+          console.log('token', token)
           setHolding(true);
           unityContext.send("AccessController", "InsertToken");
         }
-      });
+      }).catch(console.error);
     }
-  }, [walletAddress, getAssets]);
+  }, 1000)
 
   const ticketImageView = () => {
     return (

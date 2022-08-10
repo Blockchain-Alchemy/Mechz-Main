@@ -1,10 +1,14 @@
+import axios from "axios";
 import { useCallback } from "react";
 import { useTezosContext } from './useTezosContext'
 
-const useAssets = () => {
-  const { tezos, walletAddress } = useTezosContext()!
+const TZSTATS_URL = 'https://api.tzstats.com';
+const contractAddress = 'KT1K58hY9q4ckHnb1KGXB2XgbM49EXZTWPBy';
 
-  const getAssets = useCallback(() => {
+const useAssets = () => {
+  const { walletAddress } = useTezosContext()!
+
+  /*const getAssets = useCallback(() => {
     if (tezos && walletAddress) {
       return tezos.wallet
         .at("KT1K58hY9q4ckHnb1KGXB2XgbM49EXZTWPBy")
@@ -24,7 +28,41 @@ const useAssets = () => {
       return Promise.reject('Please connect your wallet')
     }
 
-  }, [tezos, walletAddress])
+  }, [tezos, walletAddress])*/
+
+  const getBigmapValue = async (ledger: any, key: string) => {
+    try {
+      const url = `${TZSTATS_URL}/explorer/bigmap/${ledger}/${key}`;
+      const res = await axios.get(url)
+      return res.data;
+    } catch (e) {
+      console.error(e);
+      return null;
+    };
+  }
+
+  const getAssets = useCallback(() => {
+    const assets = async () => {
+      let url = `${TZSTATS_URL}/explorer/contract/${contractAddress}`;
+      let res = await axios.get(url)
+
+      let ledger = res.data.bigmaps.ledger;
+      let key = `${walletAddress},${0}`;
+      let token = await getBigmapValue(ledger, key);
+      if (token) {
+        return token;
+      }
+
+      key = `${walletAddress},${1}`;
+      token = await getBigmapValue(ledger, key);
+      if (token) {
+        return token;
+      }
+
+      return null;
+    }
+    return assets();
+  }, [walletAddress])
 
   return {
     getAssets,
