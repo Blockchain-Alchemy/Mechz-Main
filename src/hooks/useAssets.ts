@@ -47,18 +47,14 @@ const useAssets = () => {
       let res = await axios.get(url)
 
       let ledger = res.data.bigmaps.ledger;
-      let key = `${walletAddress},${0}`;
-      let token = await getBigmapValue(ledger, key);
-      if (token) {
-        return token;
-      }
 
-      key = `${walletAddress},${1}`;
-      token = await getBigmapValue(ledger, key);
-      if (token) {
-        return token;
+      for (let tokenId = 0; tokenId <= 10; tokenId++) {
+        let key = `${walletAddress},${tokenId}`;
+        let token = await getBigmapValue(ledger, key);
+        if (token) {
+          return token;
+        }
       }
-
       return null;
     }
     return assets();
