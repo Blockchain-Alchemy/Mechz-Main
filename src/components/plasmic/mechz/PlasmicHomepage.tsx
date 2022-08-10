@@ -187,6 +187,7 @@ function PlasmicHomepage__RenderFunc(props: {
   return (
     <React.Fragment>
       {}
+
       {}
 
       <div className={projectcss.plasmic_page_wrapper}>
@@ -280,7 +281,9 @@ function PlasmicHomepage__RenderFunc(props: {
                     projectcss.__wab_text,
                     sty.link4
                   )}
-                  href={"https://ab2.gallery/asset/794691991" as const}
+                  href={
+                    "https://objkt.com/collection/KT1K58hY9q4ckHnb1KGXB2XgbM49EXZTWPBy" as const
+                  }
                 >
                   {"Store"}
                 </a>
@@ -395,7 +398,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       >
                         <React.Fragment>
                           <React.Fragment>
-                            {"Play as the hero in your own adventure. "}
+                            {"Pilot your own mech in this sci-fi adventure. "}
                           </React.Fragment>
                           <span
                             className={
@@ -403,11 +406,11 @@ function PlasmicHomepage__RenderFunc(props: {
                             }
                             style={{ fontWeight: 700 }}
                           >
-                            {"Algo Ranchero  "}
+                            {"Mechz "}
                           </span>
                           <React.Fragment>
                             {
-                              "is the first open-world play-to-earn Western Adventure game. \n\nIt uses the Algorand blockchain and wallet to let players keep their loot and trade with others. As the game expands, the world will grow along with the adventure. So get a "
+                              "is the first open-world play-to-earn Mechanized Combat Adventure game. \n\nIt uses the Tezos blockchain and wallet to let players keep their loot and trade with others. As the game expands, the world will grow along with the adventure. So get an Experimental Fuel Cell  and "
                             }
                           </React.Fragment>
                           <span
@@ -416,16 +419,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             }
                             style={{ fontWeight: 700 }}
                           >
-                            {"Ticket to Ride "}
-                          </span>
-                          <React.Fragment>{"and saddle up to "}</React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"Algo Ranchero!"}
+                            {"mount up to Mechz!"}
                           </span>
                           <React.Fragment>{""}</React.Fragment>
                         </React.Fragment>
@@ -732,7 +726,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     sty.listIteam5
                                   )}
                                 >
-                                  {"Collect and Ride Horses"}
+                                  {"Create and Join Factions"}
                                 </li>
 
                                 <li
@@ -745,7 +739,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     sty.listIteam6
                                   )}
                                 >
-                                  {"Discover new lands\n"}
+                                  {"Discover New Planets\n"}
                                 </li>
 
                                 <li
@@ -758,7 +752,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     sty.listIteam7
                                   )}
                                 >
-                                  {"Meet new characters"}
+                                  {"Meet New C\nharacters"}
                                 </li>
                               </ul>
                             </h2>
@@ -997,7 +991,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "The first major bit of functionality will be to allow certain VIPs, influencers and whales to get early access to the game world. So our first NFT is the Ticket to Ride. When purchased, the owner will be able to board the train and travel to Algo Ranchero"
+                      "The first major bit of functionality will be to allow certain VIPs, influencers and whales to get early access to the game world. So our first NFT is the Experimental Fuel Cell. When purchased, the owner will be able to board a mech and play Mechz."
                     }
                   </p>
                 </div>
@@ -1049,7 +1043,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "The open-world nature of Algo Ranchero contributes to secret and exclusive areas that are unlocked with Game World NFTs. These can be won by playing Algo Ranchero or purchased. "
+                      "The open-world nature of Mechz contributes to secret and exclusive areas that are unlocked with Game World NFTs. These can be won by playing Mechz or purchased. "
                     }
                   </p>
                 </div>
@@ -1075,7 +1069,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Algo Ranchero will have special missions that can only be accessed by holding special mission NFTs. These will primarily be collaborations with other artists on Algorand. "
+                      "Mechz will have special missions that can only be accessed by holding special mission NFTs. These will primarily be collaborations with other artists on Tezos. "
                     }
                   </p>
                 </div>
@@ -1101,7 +1095,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "As the game world expands, we'll offer players the opportunity to own a part of Algo Ranchero. Players can purchase open land as well as existing shops and locations. The land will offer customization of the game world through blockchain ownership."
+                      "As the game world expands, we'll offer players the opportunity to own a part of Mechz. Players can purchase open land as well as existing shops and locations. The land will offer customization of the game world through blockchain ownership."
                     }
                   </p>
                 </div>
@@ -1115,7 +1109,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.h2___8MlV2
                     )}
                   >
-                    {"6. Unlock Duels"}
+                    {"6. Factions"}
                   </h2>
 
                   <p
@@ -1127,7 +1121,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "The next thing we'll bring players of Algo Ranchero is the ability to duel. This western pastime is will offer action and rewards through a nerve-racking mini-game consisting of a tense standoff with an gun-toting opponent. "
+                      "The next thing we'll bring players of Mechz is the ability to join factions. Each faction will have a special reward and unique missions. Factions will encourage teamwork and collaboration. "
                     }
                   </p>
                 </div>
@@ -1227,7 +1221,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.listIteam10
                           )}
                         >
-                          {"Horses\n"}
+                          {"Faction Items\n"}
                         </li>
 
                         <li
@@ -1625,6 +1619,7 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             </section>
           ) : null}
+
           {true ? (
             <section
               data-plasmic-name={"section8"}
@@ -1737,6 +1732,7 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </section>
           ) : null}
+
           {true ? (
             <section
               data-plasmic-name={"section9"}
@@ -1945,6 +1941,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         />
                       </a>
                     ) : null}
+
                     {true ? (
                       <a
                         className={classNames(
@@ -1976,6 +1973,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         />
                       </a>
                     ) : null}
+
                     {true ? (
                       <a
                         className={classNames(
@@ -2007,6 +2005,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         />
                       </a>
                     ) : null}
+
                     {true ? (
                       <a
                         className={classNames(
