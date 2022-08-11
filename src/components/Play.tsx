@@ -25,13 +25,14 @@ function Play_(props: PlayProps, ref: HTMLElementRefOf<"div">) {
 
   useInterval(() => {
     if (walletAddress && !holding) {
-      getAssets().then((token) => {
-        if (token) {
-          console.log('token', token)
-          setHolding(true);
-          unityContext.send("AccessController", "InsertToken");
-        }
-      }).catch(console.error);
+      getAssets(1)
+        .then((token) => {
+          if (token) {
+            console.log('token', token)
+            setHolding(true);
+            unityContext.send("AccessController", "InsertToken");
+          }
+        }).catch(console.error);
     }
   }, 1000)
 
