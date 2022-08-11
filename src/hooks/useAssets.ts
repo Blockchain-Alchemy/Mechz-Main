@@ -8,7 +8,7 @@ const contractAddress = 'KT1K58hY9q4ckHnb1KGXB2XgbM49EXZTWPBy';
 const useAssets = () => {
   const { tezos, walletAddress } = useTezosContext()!
 
-  const getAssets = useCallback((tokenId) => {
+  const getAssets = useCallback((tokenId: number) => {
     if (tezos && walletAddress) {
       return tezos.wallet
         .at("KT1K58hY9q4ckHnb1KGXB2XgbM49EXZTWPBy")
