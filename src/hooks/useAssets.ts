@@ -1,9 +1,8 @@
-import axios from "axios";
 import { useCallback } from "react";
 import { useTezosContext } from './useTezosContext'
 
-const TZSTATS_URL = 'https://api.tzstats.com';
-const contractAddress = 'KT1K58hY9q4ckHnb1KGXB2XgbM49EXZTWPBy';
+//const TZSTATS_URL = 'https://api.tzstats.com';
+//const contractAddress = 'KT1K58hY9q4ckHnb1KGXB2XgbM49EXZTWPBy';
 
 const useAssets = () => {
   const { tezos, walletAddress } = useTezosContext()!
